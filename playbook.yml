@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+      - name: Run the equivalent of "apt-get update" as a separate step
+        ansible.builtin.apt:
+          update_cache: yes
+
+          
+  #   - name: ensure ntpd is at the latest version
+  #     yum: pkg=ntp state=latest
+  #     notify:
+  #     - restart ntpd
+  # handlers:
+  #   - name: restart ntpd
+  #     service: name=ntpd state=restarted
