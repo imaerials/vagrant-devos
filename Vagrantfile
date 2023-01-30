@@ -12,5 +12,6 @@ Vagrant.configure("2") do |config|
       ansible.playbook = "playbook.yml"
       ansible.install_mode = "pip"
       ansible.provisioning_path = "/home/vagrant"
+      ansible.tags = "osupdate"
     end
 end
