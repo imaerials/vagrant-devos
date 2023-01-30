@@ -3,3 +3,4 @@ vagrant
 .bash_history
 .vagrant/
 .cache/motd.legal-displayed
+variables.rb
